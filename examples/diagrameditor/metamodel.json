@@ -70,7 +70,8 @@
             "ordered": true,
             "unique": true,
             "lowerBound": 0,
-            "upperBound": -1
+            "upperBound": -1,
+            "containment": true
         }]
     }, {
         "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass",
@@ -98,7 +99,8 @@
             "ordered": true,
             "unique": true,
             "lowerBound": 0,
-            "upperBound": -1
+            "upperBound": -1,
+            "containment": true
         }, {
             "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference",
             "name": "metaElement",
