@@ -5,6 +5,24 @@
     "nsPrefix": "diagrameditor",
     "eClassifiers": [{
         "eClass": "ecore#//EClass",
+        "name": "DiagramSet",
+        "abstract": false,
+        "interface": false,
+        "eStructuralFeatures": [{
+            "eClass": "ecore#//EReference",
+            "name": "diagrams",
+            "eType": {
+                "$ref": "//Diagram",
+                "eClass": "ecore#//EClass"
+            },
+            "ordered": true,
+            "unique": true,
+            "lowerBound": 0,
+            "upperBound": -1,
+            "containment": true
+        }]
+    },{
+        "eClass": "ecore#//EClass",
         "name": "Diagram",
         "abstract": false,
         "interface": false,
@@ -18,7 +36,7 @@
             "ordered": true,
             "unique": true,
             "lowerBound": 0,
-            "upperBound": "-1",
+            "upperBound": -1,
             "containment": true
         }, {
             "eClass": "ecore#//EReference",
@@ -30,7 +48,7 @@
             "ordered": true,
             "unique": true,
             "lowerBound": 0,
-            "upperBound": "-1"
+            "upperBound": -1
         }]
     }, {
         "eClass": "ecore#//EClass",
@@ -47,7 +65,7 @@
             "ordered": true,
             "unique": true,
             "lowerBound": 0,
-            "upperBound": "-1"
+            "upperBound": -1
         }, {
             "eClass": "ecore#//EReference",
             "name": "metaElement",
