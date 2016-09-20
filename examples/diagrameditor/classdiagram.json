@@ -3,6 +3,10 @@
     "diagrams": [{
         "eClass": "diagrameditor#//Diagram",
         "name": "ClassDiagram",
+        "metaElement": {
+            "$ref": "classdiagram#//Class Diagram",
+            "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
+        },
         "nodes": [{
             "eClass": "diagrameditor#//Node",
             "name": "ClassNode",
