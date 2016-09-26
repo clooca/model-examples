@@ -1,44 +1,28 @@
 {
-    "eClass": "diagrameditor#//DiagramSet",
-    "diagrams": [{
-        "eClass": "diagrameditor#//Diagram",
-        "name": "ClassDiagram",
-        "metaElement": {
-            "$ref": "classdiagram#//Class Diagram",
-            "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
-        },
-        "nodes": [{
-            "eClass": "diagrameditor#//Node",
-            "name": "ClassNode",
+    "eClass": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/diagrameditor/metamodel.json#//DiagramSet",
+    "diagrams": [
+        {
+            "eClass": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/diagrameditor/metamodel.json#//Diagram",
+            "name": "ClassDiagram",
+            "nodes": [
+                {
+                    "eClass": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/diagrameditor/metamodel.json#//Node",
+                    "name": "ClassNode",
+                    "metaElement": {
+                        "$ref": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/classdiagram/metamodel.json#//Class",
+                        "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
+                    },
+                    "containFeature": {
+                        "$ref": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/classdiagram/metamodel.json#//Class Diagram/classes",
+                        "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
+                    }
+                }
+            ],
             "metaElement": {
-                "$ref": "classdiagram#//Class",
+                "$ref": "https://raw.githubusercontent.com/clooca/model-examples/master/examples/classdiagram/metamodel.json#//Class Diagram",
                 "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
-            },
-            "containFeature": {
-                "$ref": "classdiagram#//Class Diagram/classes",
-                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
             }
-        }],
-        "connections": [{
-            "eClass": "diagrameditor#//Connection",
-            "name": "AssociationNode",
-            "metaElement": {
-                "$ref": "classdiagram#//Association",
-                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
-            },
-            "containFeature": {
-                "$ref": "classdiagram#//Class/associations",
-                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
-            },
-            "sourceFeature": {
-                "$ref": "classdiagram#//Association/source",
-                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
-            },
-            "targetFeature": {
-                "$ref": "classdiagram#//Association/target",
-                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
-            }
-        }]
-    }],
+        }
+    ],
     "name": "ClassDiagramSet"
 }
