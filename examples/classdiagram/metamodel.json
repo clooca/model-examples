@@ -1,7 +1,7 @@
 {
   "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EPackage",
   "name": "Class Diagram",
-  "nsURI": "https://clooca.github.io/model-examples/classdiagram/metamodel.json",
+  "nsURI": "https://clooca.github.io/model-examples/examples/classdiagram/metamodel.json",
   "nsPrefix": "classdiagram",
   "eClassifiers": [
     {
