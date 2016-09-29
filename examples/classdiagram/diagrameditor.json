@@ -1,0 +1,28 @@
+{
+    "eClass": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//DiagramSet",
+    "diagrams": [
+        {
+            "eClass": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//Diagram",
+            "name": "ClassDiagram",
+            "nodes": [
+                {
+                    "eClass": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//Node",
+                    "name": "ClassNode",
+                    "metaElement": {
+                        "$ref": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//Class",
+                        "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
+                    },
+                    "containFeature": {
+                        "$ref": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//Class Diagram/classes",
+                        "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EReference"
+                    }
+                }
+            ],
+            "metaElement": {
+                "$ref": "https://clooca.github.io/model-examples/examples/diagrameditor/model.json#//Class Diagram",
+                "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EClass"
+            }
+        }
+    ],
+    "name": "ClassDiagramSet"
+}

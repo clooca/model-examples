@@ -1,7 +1,7 @@
 {
   "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EPackage",
   "name": "Class Diagram",
-  "nsURI": "http://clooca.com/classdiagram",
+  "nsURI": "https://clooca.github.io/model-examples/classdiagram/metamodel.json",
   "nsPrefix": "classdiagram",
   "eClassifiers": [
     {
@@ -67,6 +67,31 @@
           "lowerBound": 0,
           "upperBound": -1,
           "containment": true
+        },
+        {
+          "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EAttribute",
+          "name": "x",
+          "eType": {
+            "$ref": "http://www.eclipse.org/emf/2002/Ecore#//EDouble",
+            "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EDataType"
+          },
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1,
+          "defaultValueLiteral": "0"
+        },
+        {
+          "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EAttribute",
+          "name": "y",
+          "eType": {
+            "$ref": "http://www.eclipse.org/emf/2002/Ecore#//EDouble",
+            "eClass": "http://www.eclipse.org/emf/2002/Ecore#//EDataType"
+          },
+          "ordered": true,
+          "unique": true,
+          "lowerBound": 0,
+          "upperBound": 1
         }
       ]
     },
