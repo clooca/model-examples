@@ -1,0 +1,13 @@
+<%
+  for(var i=0;i < root.get('classes');i++) {
+  var class = root.get('classes').at(i);
+%>
+	class <%= class.get('name') %> {
+		<%
+			for(var j=0;j < class.get('associations');j++) {
+			var asso = class.get('associations').at(j);
+		%>
+			var <%= asso.get('name') %>;
+		<% } %>
+	}
+<% } %>
